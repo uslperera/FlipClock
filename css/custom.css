@@ -1,0 +1,14 @@
+body {
+    background: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    top: 38%;
+    left: 32%;
+    position: fixed;
+}

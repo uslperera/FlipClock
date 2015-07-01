@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/flipclock.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <div class="your-clock center"></div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/flipclock.min.js"></script>
+<script>
+    var hours = 3;
+    var minutes = 0;
+    var seconds = 0;
+
+
+    var timeInSeconds = (hours * 3600) + (minutes * 60) + seconds;
+    var clock = $('.your-clock').FlipClock({
+        autoStart: true,
+        countdown: true,
+
+    });
+
+    clock.setTime(timeInSeconds);
+    clock.start();
+</script>
+
+</html>
